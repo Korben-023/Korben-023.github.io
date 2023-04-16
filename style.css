@@ -1,0 +1,586 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    position: sticky;
+  }
+  
+  li {
+    float: right;
+    position: sticky;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    position: sticky;
+
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+    
+  }
+  
+   
+  
+
+  
+
+  footer {
+    border-top: solid 1px;
+    background-color: #04235c;
+    width: 100%;
+    height: 40px;
+    padding-top: 10px;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+  }
+  
+
+
+
+ul.bottom-nav  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #04235c;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  
+  }
+  li.bottom-nav {
+    float: right;
+  }
+  p.bottom-nav {
+    float: left;
+    color: white;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    left: 20;
+  }
+  
+  /* End of Bottom Navigation Bar */
+  /* Button Effects */
+  .button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 30px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+ .WB{
+   font-weight: 100;
+ }
+ .app{
+   color:white ;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   margin:15px;
+   border-radius: 15px;
+   background-color: blue;
+   padding:15px;
+   position:absolute;
+   bottom:60px;
+   
+   
+ }
+ .WebRequirements{
+   border: 15px green;
+
+
+ }
+ .txtLOOKING{
+   font: bold;
+   text-align: center;
+ }
+
+ .homepiccontainer{
+   height: 100%;
+   width: 100%;
+   object-fit: contain;
+  
+
+ }
+ .Container-job{
+   height: 40em;
+   width: 20em;
+   background-color:greenyellow;
+   border-radius:5% ;
+   text-align: center;
+   left:10%;
+   position:absolute
+   
+ }
+ .Container-job-game{
+   left:60%;
+   height: 40em;
+   width: 20em;
+   background-color:red;
+   border-radius:5% ;
+   text-align: center;
+   position:absolute;
+   top:110px;
+
+ }
+ 
+
+ 
+ .imgHome{
+   height: 40em;
+   width: 100%;
+ }
+ .pic{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+ }
+ .WebImage{
+   border-radius:50% ;
+ }
+ 
+ 
+.TXTDescription{
+  color: white;
+  position: absolute;
+  top:45em;
+  left: 50%;
+  font-weight: 800;
+  
+  
+}
+.Buynow{
+  font-size: 30PX;
+  color: white;
+  position: absolute;
+  top: 4em;
+  right: 90%;
+  border: solid rgba(153, 26, 26, 0);
+  background-color: rgba(153, 26, 26, 0);
+  font-weight: 700;
+  font-style: oblique;
+
+
+}
+.Price{
+  left:80px;
+  bottom:0px;
+  color:white;
+  position:absolute;
+}
+
+
+
+
+
+
+/* provides background color to body */
+body {
+  background-color: #04235c;
+}
+
+
+/* centers the whole content of the page
+ defines width and height for container  */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  height: 600px;
+}
+
+
+/* provides padding to main heading */
+.main-heading {
+  padding: 2rem 0 2rem 0;
+}
+
+.content {
+  position: relative;
+}
+
+
+
+/*nav*/
+.nav {
+  height: 80px;
+  width: 100%;
+  background-color: #00245A;
+  position: fixed;
+  z-index: 9999999;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #e7d002;
+  padding: 10px 10px 10px 10px;
+}
+.nav > .nav-links {
+  
+  float: right;
+  font-size: 18px;
+  display: inline-block;
+ justify-content: space-between;
+ align-items: center;
+ position: relative;
+}
+ /* nave icon colour*/
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 15px 15px 15px ;
+  text-decoration: none;
+  color: yellow;
+}
+
+/*nav hover colour*/
+ 
+.nav > .nav-links > a:hover {
+  background-color: gray;
+
+}
+.nav > .nav-btn,
+.nav > #nav-check {
+display: none;
+}
+.logo{
+  height:55px;
+}
+
+
+/*Features*/
+
+.F-conatiner{
+  
+  display: grid;
+
+  grid-template-columns: 32em 38em 38em;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "image1 image2 image3"
+                       "Title1 Title2 Title3"
+                       "Description1 Description2 Description3"
+
+
+  
+
+}
+.moneyImage{
+  grid-area: image3;
+  left:10%;
+  width:200px;
+  height: auto;
+  position: relative;
+
+}
+.gamerImage{
+  grid-area: image2;
+  left:40%;
+  width:200px;
+  height: auto;
+  position: relative;
+}
+
+.boltImage{
+  grid-area: image1;
+  left:70%;
+  width:150px;
+  height: auto;
+  position: relative;
+}
+
+
+
+
+  
+
+.bolt{
+
+  grid-area: Title1;
+  left:19%;
+  width:150px;
+  height: auto;
+  position: relative;
+  display:block;
+  top:10em;
+  color:#e7d002;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.gamer{
+  grid-area: Title2;
+  left:40%;
+  width:200px;
+  height: auto;
+  position: relative;
+  top:10em;
+  color:#e7d002;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.money{
+  grid-area: Title3;
+  left:70%;
+  width:200px;
+  height: auto;
+  position: relative;
+  top:10em;
+  color:#e7d002;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/*Game home page*/
+
+
+
+
+
+
+.G-conatiner{
+
+  display: grid;
+
+  grid-template-columns: 20em 20em 20em;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "game1 game2 game3"
+                        "TEXT1 TEXT2 TEXT3"
+                       
+
+/*Css styling for the image*/
+}
+.Game1Image{
+  grid-area:game1;
+  top:68em;
+  position: absolute;
+  left:10%;
+  width:200px;
+  height: auto;
+  max-width: 200px;
+  max-height: 300px;
+}
+
+.Game2Image{
+  grid-area:game2;
+  top:68em;
+  position: absolute;
+  left:40%;
+  width:200px;
+  height: auto;
+  max-width: 200px;
+  max-height: 300px;
+}
+
+.Game3Image{
+  grid-area:game3;
+  top:68em;
+  position: absolute;
+  width:auto;
+  height: 200px;
+  left: 70%;
+  max-width: 200px;
+  max-height: 300px;
+}
+
+.Game1{
+  grid-area:TEXT1;
+  top:78em;
+  position: absolute;
+  left:14%;
+  width:200px;
+  height: auto;
+  color:#e7d002;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+}
+.Game2{
+  grid-area:TEXT2;
+  top:78em;
+  position: absolute;
+  left:43%;
+  width:200px;
+  height: auto;
+  color:#e7d002;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+}
+.Game3{
+  grid-area:TEXT3;
+  top:78em;
+  position: absolute;
+  width:auto;
+  height: 200px;
+  left: 70%;
+  color:#e7d002;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  
+}
+
+
+/* Hardware section*/
+.H-Container{
+  
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #04235c;
+  top:26em;
+  position: relative;
+  height: 250px;
+  bottom:30px;
+  padding: 5px;
+    
+    
+}
+
+/*Hardware Text styling*/
+
+.TEXTSTYLE{
+
+  text-align: center;
+  color:#e7d002;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+
+@media (max-width:600px) {
+
+  /* Makes nav bar responsive*/
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+
+
+  /*rELOACTE HOMW PAGE CONTENT ELEMNTS*/
+/*feature info*/
+
+
+  
+
+.G-conatiner{
+  display: block;
+  
+}
+.moneyImage{
+left:2%;
+top:38em;
+position: relative;
+
+
+}
+
+
+.gamerImage{
+  left:2%;
+  top:40em;
+  position: relative;
+
+
+}
+.boltImage{
+
+  left:20px;
+  top:2em;
+  position: relative;
+  
+}
