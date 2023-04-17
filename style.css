@@ -476,6 +476,7 @@ display: none;
   padding: 8px 16px;
   border-radius: 4px;
   cursor: pointer;
+  top:40%;
 }
 
 
@@ -507,10 +508,31 @@ display: none;
 }
 
 
+/*Gmae page css*/
+.GameSiteGames {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
-@media (max-width:600px) {
+.Game-conatiner {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.GamePage1 {
+  width: 100%;
+}
+
+.GPGame1, .GPGame2, .GPGame3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+@media (max-width:600px) 
 
   /* Makes nav bar responsive*/
+{
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
