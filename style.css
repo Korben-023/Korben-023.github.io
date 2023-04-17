@@ -300,107 +300,82 @@ display: none;
 /*Features*/
 
 .F-conatiner{
-  
   display: grid;
-
-  grid-template-columns: 32em 38em 38em;
+  justify-items: center; /* center grid items horizontally */
+  grid-template-columns: repeat(3, 1fr); /* evenly space 3 columns */
   grid-template-rows: 50% 50%;
-  grid-template-areas: "image1 image2 image3"
-                       "Title1 Title2 Title3"
-                       "Description1 Description2 Description3"
-
-
-  
-
+  grid-template-areas: 
+    "image1 image2 image3"
+    "Title1 Title2 Title3"
+    "Description1 Description2 Description3";
 }
+
 .moneyImage{
   grid-area: image3;
-  left:10%;
-  width:200px;
+  width: 200px;
   height: auto;
-  position: relative;
-
 }
+
 .gamerImage{
   grid-area: image2;
-  left:40%;
-  width:200px;
+  width: 200px;
   height: auto;
-  position: relative;
 }
 
 .boltImage{
   grid-area: image1;
-  left:70%;
-  width:150px;
+  width: 150px;
   height: auto;
-  position: relative;
 }
 
-
-
-
-  
-
 .bolt{
-
   grid-area: Title1;
-  left:19%;
-  width:150px;
-  height: auto;
-  position: relative;
-  display:block;
-  top:10em;
-  color:#e7d002;
+  color: #e7d002;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
   font-weight: 700;
+  margin-top: 2em; /* add top margin for spacing */
+  top:15em;
 }
 
 .gamer{
   grid-area: Title2;
-  left:40%;
-  width:200px;
-  height: auto;
-  position: relative;
-  top:10em;
-  color:#e7d002;
+  color: #e7d002;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
   font-weight: 700;
+  margin-top: 2em; /* add top margin for spacing */
+  top:15em;
 }
 
 .money{
   grid-area: Title3;
-  left:70%;
-  width:200px;
-  height: auto;
-  position: relative;
-  top:10em;
-  color:#e7d002;
+  color: #e7d002;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
   font-weight: 700;
+  margin-top: 2em; /* add top margin for spacing */
+  top:15em;
 }
 
-/*Game home page*/
+/*Game section*/
 
 
 
 
 
 
-.G-conatiner{
-
+.G-container{
   display: grid;
-
-  grid-template-columns: 20em 20em 20em;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 50% 50%;
-  grid-template-areas: "game1 game2 game3"
-                        "TEXT1 TEXT2 TEXT3"
-                       
-
-/*Css styling for the image*/
+  grid-template-areas: 
+    "game1 game2 game3"
+    "TEXT1 TEXT2 TEXT3"
+    "Button1 Button2 Button3";
+  justify-content: center;
+  align-items: center;
+  /*Css styling for the image*/
 }
 .Game1Image{
   grid-area:game1;
@@ -412,7 +387,6 @@ display: none;
   max-width: 200px;
   max-height: 300px;
 }
-
 .Game2Image{
   grid-area:game2;
   top:68em;
@@ -423,7 +397,6 @@ display: none;
   max-width: 200px;
   max-height: 300px;
 }
-
 .Game3Image{
   grid-area:game3;
   top:68em;
@@ -434,7 +407,6 @@ display: none;
   max-width: 200px;
   max-height: 300px;
 }
-
 .Game1{
   grid-area:TEXT1;
   top:78em;
@@ -472,6 +444,39 @@ display: none;
   font-weight: 700;
   
 }
+.buy-button1{
+  grid-area: button1;
+  margin-top: 10px;
+  background-color: #e7d002;
+  color: #04235c;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.25);
+}
+
+.buy-button2{
+  grid-area: button2;
+  margin-top: 10px;
+  background-color: #e7d002;
+  color: #04235c;
+  border: 2px solid #8B0000;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buy-button3{
+  grid-area: button3;
+  margin-top: 10px;
+  background-color: #e7d002;
+  color: #04235c;
+  border: 2px solid #8B0000;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
 
 /* Hardware section*/
@@ -480,10 +485,10 @@ display: none;
   width: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #04235c;
+  background-color: #000c20f8;
   top:26em;
   position: relative;
-  height: 250px;
+  height: 350px;
   bottom:30px;
   padding: 5px;
     
@@ -557,73 +562,30 @@ display: none;
 
   
 
-.F-conatiner {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
-  grid-template-areas:
-  "image1"
-  "Title1"
-  "Description1"
-  "image2"
-  "Title2"
-  "Description2"
-  "image3"
-  "Title3"
-  "Description3";
-  }
+.G-conatiner{
+  display: block;
   
-  .boltImage {
-  grid-area: image1;
-  left: 10%;
-  width: 100%;
-  height: auto;
+}
+.moneyImage{
+left:2%;
+top:38em;
+position: relative;
+
+
+}
+
+
+.gamerImage{
+  left:2%;
+  top:40em;
   position: relative;
-  }
-  
-  .bolt {
-  grid-area: Title1;
-  left: 0;
-  top: 0;
-  margin-top: 1em;
-  margin-bottom: 0.5em;
-  }
-  
-  .gamerImage {
-  grid-area: image2;
-  left: 10%;
-  width: 100%;
-  height: auto;
+
+
+}
+.boltImage{
+
+  left:20px;
+  top:2em;
   position: relative;
-  }
   
-  .gamer {
-  grid-area: Title2;
-  left: 0;
-  top: 0;
-  margin-top: 1em;
-  margin-bottom: 0.5em;
-  }
-  
-  .moneyImage {
-  grid-area: image3;
-  left: 10%;
-  width: 100%;
-  height: auto;
-  position: relative;
-  }
-  
-  .money {
-  grid-area: Title3;
-  left: 0;
-  top: 0;
-  margin-top: 1em;
-  margin-bottom: 0.5em;
-  }
-  
-  .description1,
-  .description2,
-  .description3 {
-  text-align: center;
-  }
-  }
+}
