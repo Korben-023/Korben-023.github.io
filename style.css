@@ -557,30 +557,73 @@ display: none;
 
   
 
-.G-conatiner{
-  display: block;
+.F-conatiner {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+  "image1"
+  "Title1"
+  "Description1"
+  "image2"
+  "Title2"
+  "Description2"
+  "image3"
+  "Title3"
+  "Description3";
+  }
   
-}
-.moneyImage{
-left:2%;
-top:38em;
-position: relative;
-
-
-}
-
-
-.gamerImage{
-  left:2%;
-  top:40em;
+  .boltImage {
+  grid-area: image1;
+  left: 10%;
+  width: 100%;
+  height: auto;
   position: relative;
-
-
-}
-.boltImage{
-
-  left:20px;
-  top:2em;
-  position: relative;
+  }
   
-}
+  .bolt {
+  grid-area: Title1;
+  left: 0;
+  top: 0;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  }
+  
+  .gamerImage {
+  grid-area: image2;
+  left: 10%;
+  width: 100%;
+  height: auto;
+  position: relative;
+  }
+  
+  .gamer {
+  grid-area: Title2;
+  left: 0;
+  top: 0;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  }
+  
+  .moneyImage {
+  grid-area: image3;
+  left: 10%;
+  width: 100%;
+  height: auto;
+  position: relative;
+  }
+  
+  .money {
+  grid-area: Title3;
+  left: 0;
+  top: 0;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  }
+  
+  .description1,
+  .description2,
+  .description3 {
+  text-align: center;
+  }
+  }
