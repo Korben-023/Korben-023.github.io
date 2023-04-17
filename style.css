@@ -510,24 +510,31 @@ display: none;
 
 /*Gmae page css*/
 .GameSiteGames {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 800px;
+  top: 200px;
 }
 
 .Game-conatiner {
-  width: 30%;
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.GamePage1 {
-  width: 100%;
+.Game-conatiner img {
+  margin-right: 20px;
 }
 
-.GPGame1, .GPGame2, .GPGame3 {
-  font-size: 1.2rem;
+.GPGame1,
+.GPGame2,
+.GPGame3 {
+  margin: 0;
   font-weight: bold;
-  margin-top: 10px;
+}
+
+.Text {
+  margin: 0;
+  font-size: 14px;
 }
 @media (max-width:600px) 
 
