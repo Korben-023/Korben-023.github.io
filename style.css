@@ -334,8 +334,8 @@ display: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
   font-weight: 700;
-  margin-top: 2em; /* add top margin for spacing */
-  top:15em;
+  margin-top: 6em; /* add top margin for spacing */
+  top:23em;
 }
 
 .gamer{
@@ -396,6 +396,16 @@ p {
 .Game1Image {
   margin-right: 10px; /* added margin to the right */
   max-width: 100%;
+
+}
+.Game1{
+  color: #e7d002;
+}
+.Game3{
+  color: #e7d002;
+}
+.Game2{
+  color: #e7d002;
 }
 
 
