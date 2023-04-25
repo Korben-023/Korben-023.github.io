@@ -424,6 +424,11 @@ p {
     
     
 }
+image{
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
 .video-wrapper {
   display: flex;
   justify-content: space-between;
@@ -434,7 +439,9 @@ p {
 }
 
 
-
+.TXTG{
+  color: yellow;
+}
 
 
 
