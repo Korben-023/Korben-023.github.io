@@ -424,6 +424,55 @@ p {
     
     
 }
+@media screen and (max-width: 768px) {
+  /* adjust styles for mobile devices with screen width up to 768 pixels */
+  .F-conatiner {
+    grid-template-columns: repeat(1, 1fr); /* change to 1 column layout */
+    grid-template-rows: auto; /* change to automatic row height */
+    grid-template-areas: 
+      "image1"
+      "Title1"
+      "image2"
+      "Title2"
+      "image3"
+      "Title3"
+      "Description1"
+      "Description2"
+      "Description3";
+  }
+  
+  .moneyImage,
+  .gamerImage,
+  .boltImage {
+    max-width: 150px; /* decrease image width */
+    max-height: 150px; /* decrease image height */
+  }
+  
+  .bolt,
+  .gamer,
+  .money {
+    margin-top: 0.5em; /* reduce top margin for spacing */
+    top: auto;
+  }
+  
+  /* adjust styles for Game section */
+  .G-conatiner {
+    flex-direction: column; /* change to column layout */
+    align-items: center; /* center items horizontally */
+  }
+  
+  .Game1Image {
+    margin-right: 0; /* remove margin */
+  }
+  
+  /* adjust styles for Hardware section */
+  .H-Container {
+    width: 100%; /* make container full width */
+    margin: 0; /* remove margins */
+    top: auto;
+    bottom: auto;
+  }
+}
 
 /*Hardware Text styling*/
 
