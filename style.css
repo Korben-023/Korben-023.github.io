@@ -219,7 +219,7 @@ ul.bottom-nav  {
 
 /* provides background color to body */
 body {
-  background-color: #04235c;
+  background-color: black;
 }
 
 
@@ -416,7 +416,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   background-color: #000c20f8;
-  top:20em;
+  top:2em;
   position: relative;
   height: 350px;
   bottom:30px;
@@ -424,6 +424,22 @@ p {
     
     
 }
+.video-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.video {
+  width: 30%;
+}
+
+
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
   /* adjust styles for mobile devices with screen width up to 768 pixels */
   .F-conatiner {
@@ -472,6 +488,13 @@ p {
     top: auto;
     bottom: auto;
   }
+  .video {
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  
 }
 
 /*Hardware Text styling*/
